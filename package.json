@@ -1,0 +1,22 @@
+{
+  "name": "advance-otp-generater",
+  "version": "1.0.3",
+  "description": "A library to generate advanced OTPs and captcha images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "otp",
+    "generator",
+    "advanced",
+    "advanced",
+    "captcha",
+    "images"
+  ],
+  "author": "Deepak Gupta",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.11.2"
+  }
+}
