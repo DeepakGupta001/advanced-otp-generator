@@ -79,9 +79,10 @@ function drawTextAndSaveImage(text, fileName = "captcha.png") {
   }
 
   // Save the image to the root directory
-  const buffer = canvas.toBuffer("image/png");
-  const imagePath = path.join(__dirname, fileName); // Save in the root directory
+  const projectRoot = path.resolve(__dirname, '../..'); // Navigate up one level to the project root
+  const imagePath = path.join(projectRoot, fileName); // Save in the project root directory
 
+  const buffer = canvas.toBuffer("image/png");
   fs.writeFileSync(imagePath, buffer);
   console.log(`Image saved as ${fileName} in the root directory.`);
 
